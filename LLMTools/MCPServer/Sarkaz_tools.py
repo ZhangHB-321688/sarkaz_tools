@@ -87,13 +87,13 @@ def search_single_chinese_character(char: str) -> str:
     else:
         return ""
 
-# @mcp.tool
-# def convert(chars: str) -> str:  
-#     """将字符串转换为萨卡兹文字"""  
-#     return convertCharsToSKZ(chars)
+@mcp.tool
+def convert(chars: str) -> str:  
+    """将字符串转换为萨卡兹文字"""  
+    return convertCharsToSKZ(chars)
 
 @mcp.tool
-def convert(chars: list) -> dict:  
+def bulkConvert(chars: list) -> dict:  
     """将多个字符串转换为萨卡兹文字。返回一个字典，键为原始字符串，值为转换后的萨卡兹文字。"""  
     result = {}
     for char in chars:
